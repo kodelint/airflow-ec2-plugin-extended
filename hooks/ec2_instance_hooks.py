@@ -40,9 +40,9 @@ class EC2ExtendedHooks(EC2Hook):
         Create EC2 Instance on given subnet.
 
         :param subnet_id: subnet id for AWS EC2 instance
-        :type instance_id: str
+        :type subnet_id: str
         :param security_group_ids: List of security group ids
-        :type instance_id: List[str]
+        :type security_group_ids: List[str]
         :param image_id: EC2 image id
         :type image_id: str
         :param instance_type: EC2 Instance type

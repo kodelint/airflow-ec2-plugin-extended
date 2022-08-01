@@ -33,7 +33,7 @@ and [`terminate_instance`](https://github.com/kodelint/airflow-ec2-plugin-extend
 
 ![](./imgs/05-airflow-ec2-plugin.png)
 
-### Usages 
+### Example Dag 
 Here is an example `dag`, using [EC2ExtendedPlugin](https://github.com/kodelint/airflow-ec2-plugin-extended), in combination of [SSHOperator](https://airflow.apache.org/docs/apache-airflow/1.10.13/_api/airflow/contrib/operators/ssh_operator/index.html) 
 and [PythonOperator](https://airflow.apache.org/docs/apache-airflow/1.10.12/howto/operator/python.html)
 
