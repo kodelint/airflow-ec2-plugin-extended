@@ -4,16 +4,16 @@
 This plugin provides the functionality to `creates` and `terminate` an `ec2` instance.
 
 ### Hooks
-[EC2ExtendedHooks](./hooks/ec2_instance_hooks.py) class provides a ec2 hook, which further provides 2 methods [create_instance](./hooks/ec2_instance_hooks.py#) 
-and [terminate_instance](./hooks/ec2_instance_hooks.py)
+[EC2ExtendedHooks](https://github.com/kodelint/airflow-ec2-plugin-extended/blob/main/hooks/ec2_instance_hooks.py#L9) class provides a ec2 hook, which further provides 2 methods [`create_instance`](https://github.com/kodelint/airflow-ec2-plugin-extended/blob/main/hooks/ec2_instance_hooks.py#L26) 
+and [`terminate_instance`](https://github.com/kodelint/airflow-ec2-plugin-extended/blob/main/hooks/ec2_instance_hooks.py#L99)
 
 ### Operators
-[EC2ExtendedCreateInstance](./operators/ec2_create_instance.py) class `creates` the `ec2` instances
-[EC2ExtendedTerminateInstance](./operators/ec2_terminate_instance.py) class `terminates` the `ec2` instances
+[EC2ExtendedCreateInstance](https://github.com/kodelint/airflow-ec2-plugin-extended/blob/main/operators/ec2_create_instance.py#L8) class `creates` the `ec2` instances
+[EC2ExtendedTerminateInstance](https://github.com/kodelint/airflow-ec2-plugin-extended/blob/main/operators/ec2_terminate_instance.py#L7) class `terminates` the `ec2` instances
 
 ### Airflow Screenshots
 
-- `dag` tree view
+- `dag` graph view
 
 ![](./imgs/01-airflow-ec2-plugin.png)
 
@@ -34,7 +34,7 @@ and [terminate_instance](./hooks/ec2_instance_hooks.py)
 ![](./imgs/05-airflow-ec2-plugin.png)
 
 ### Usages 
-Here is an example `dag`, using **EC2ExtendedPlugin**, in combination of [SSHOperator](https://airflow.apache.org/docs/apache-airflow/1.10.13/_api/airflow/contrib/operators/ssh_operator/index.html) 
+Here is an example `dag`, using [EC2ExtendedPlugin](https://github.com/kodelint/airflow-ec2-plugin-extended), in combination of [SSHOperator](https://airflow.apache.org/docs/apache-airflow/1.10.13/_api/airflow/contrib/operators/ssh_operator/index.html) 
 and [PythonOperator](https://airflow.apache.org/docs/apache-airflow/1.10.12/howto/operator/python.html)
 
 ```python
